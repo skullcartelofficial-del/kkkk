@@ -1,0 +1,1 @@
+interface ContainerProps {\n  children: React.ReactNode;\n  className?: string;\n}\n\nexport default function Container({ children, className = '' }: ContainerProps) {\n  return (\n    <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${className}`}>\n      {children}\n    </div>\n  );\n}\n
