@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-accent: #ff8c00;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Custom utilities */
+.bg-accent {
+  @apply bg-orange-600;
+}
+
+.text-accent {
+  @apply text-orange-600;
+}
+
+.border-accent {
+  @apply border-orange-600;
+}
+
+.hover-accent:hover {
+  @apply bg-orange-700 transition-colors duration-200;
+}
